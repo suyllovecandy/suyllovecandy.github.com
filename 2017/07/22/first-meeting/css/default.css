@@ -1,0 +1,123 @@
+body{margin:0;padding:0;background:#ffe;font-size:12px;overflow:auto}
+#mainDiv{width:100%;height:100%}
+#content{margin-top: 50px !important;margin-left: 50px !important;}
+#words{top: 325px !important;left: 700px !important;}
+#loveHeart{float:left;width:670px;height:625px}
+#garden{width:100%;height:100%}
+#elapseClock{text-align:right;font-size:18px;margin-top:10px;margin-bottom:10px}
+#words{font-family:"sans-serif";width:500px;font-size:24px;color:#666}
+#messages{display:none}
+#elapseClock .digit{font-family:"digit";font-size:36px}
+#loveu{padding:5px;font-size:22px;margin-top:60px;margin-right:110px;text-align:right;display:none}
+#loveu .signature{margin-top:10px;font-size:20px;font-style:italic}
+#clickSound{display:none}
+#code{float:left;width:440px;height:400px;color:#333;font-family:"Consolas","Monaco","Bitstream Vera Sans Mono","Courier New","sans-serif";font-size:12px}
+#code .string{color:#2a36ff}
+#code .keyword{color:#7f0055;font-weight:bold}
+#code .placeholder{margin-left:15px}#code .space{margin-left:7px}
+#code .comments{color:#3f7f5f}
+#copyright{margin-top:10px;text-align:center;width:100%;color:#666}
+#errorMsg{width:100%;text-align:center;font-size:24px;position:absolute;top:100px;left:0}
+#copyright a{color:#666}
+#title{color: red;position: absolute;top: 80px;width: 100%;}
+#tContent{ font-size: 30px;
+    position: absolute;
+    left: 30%;
+    text-align: center;
+	background-image: -webkit-linear-gradient(left,blue,#66ffff 10%,#cc00ff 20%,#CC00CC 30%, #CCCCFF 40%, #00FFFF 50%,#CCCCFF 60%,#CC00CC 70%,#CC00FF 80%,#66FFFF 90%,blue 100%);
+    -webkit-text-fill-color: transparent;/* 将字体设置成透明色 */
+    -webkit-background-clip: text;/* 裁剪背景图，使文字作为裁剪区域向外裁剪 */
+    -webkit-background-size: 200% 100%; 
+    -webkit-animation: masked-animation 4s linear infinite;
+    font-size: 35px;}
+
+ /* 导航栏 设计开始 */
+#nav ul li{
+	width: 100px;
+	height: 40px;
+	background: #3385ff;
+	color: #fff;
+	text-align: center;
+	line-height: 40px;
+	border-top-left-radius: 50%;
+	border-top-right-radius: 50%;
+	position: absolute;
+	cursor: pointer;
+	display: none;
+}
+#nav ul li a div{
+	width: 100px;
+	height: 40px;
+}
+#nav ul li:nth-child(1){
+	top: 50px;
+	left: 185px;
+}
+#nav ul li:nth-child(2){
+	top: 110px;
+	left: 270px;
+	transform: rotate(70deg);
+}
+#nav ul li:nth-child(3){
+	top: 205px;
+	left: 235px;
+	transform: rotate(150deg);
+}
+#nav ul li:nth-child(4){
+	top: 205px;
+	left: 135px;
+	transform: rotate(-150deg);
+}
+#nav ul li:nth-child(5){
+	top: 110px;
+	left: 100px;
+	transform: rotate(-70deg);
+}
+#nav ul li:hover{
+	list-style: none;
+	background: #aaa;
+	color: #000;
+}
+/*炫酷效果*/
+@keyframes go{
+	0%{
+		box-shadow: 0px 0px 0px #f00;
+	}
+	50%{
+		box-shadow: 6px 3px 6px #f00;
+	}
+	100%{
+		box-shadow: 0px 0px 0px #f00;
+	}
+}
+
+/* 开关按钮 */
+.nav p{
+	width: 50px;
+	height: 50px;
+	background: #000;
+	color: #fff;
+	font-size: 12px;
+	line-height: 50px;
+	text-align: center;
+	border-radius: 50%;
+	position: relative;
+	top: 110px;
+	left: 170px;
+	cursor: pointer;
+}
+
+
+a:link{
+	text-decoration: none;
+	color: black;    /*指正常的未被访问过的链接*/
+}a:visited{
+	text-decoration:none; /*指已经访问过的链接*/
+}a:hover{ 
+	text-decoration:underline;    
+	font-size:20px;color:blue;/*指鼠标在链接*/
+}a:active{
+	text-decoration:none;/* 指正在点的链接*/ 
+}
+
+ /* 导航栏 设计jieshu */
