@@ -6,7 +6,7 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>first article | suyl-love-candy</title>
+  <title>suyllovecandy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="From then on, I started my blog life.">
 <meta property="og:type" content="article">
@@ -30,6 +30,17 @@
       background: linear-gradient(200deg,#a0cfe4,#e8c37e);
     }
   </style>
+  <style type="text/css">
+  @font-face {
+    font-family: digit;
+    src: url('digital-7_mono.ttf') format("truetype");
+  }
+  </style>
+
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
   
 
   
@@ -163,25 +174,25 @@
         
   
     <h1 class="article-title" itemprop="name">
-      first article
+      first meeting
     </h1>
   
 
         
         <a href="/2019/11/14/first-article/" class="archive-article-date">
-  	<time datetime="2019-11-14T14:36:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-14</time>
+  	<time datetime="2019-11-14T14:36:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-22</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>苏彦龙</p>
+        <!-- <p>苏彦龙</p> -->
 
       
 
       
-        <div class="page-reward">
+        <!-- <div class="page-reward">
           <a href="javascript:;" target="_blank" rel="noopener" class="page-reward-btn tooltip-top">
             <div class="tooltip tooltip-east">
             <span class="tooltip-item">
@@ -200,8 +211,108 @@
             </span>
           </div>
           </a>
+        </div> -->
+        <!-- 主体 -->
+        <div id="mainDiv">
+          <div id="content">
+            <div><audio autoplay="autoplay" loop=""><source src="mp3/ybwgkn.mp3"></audio></div>
+            <div id="code">
+              Boy name = <span class="keyword">Mr</span> Yanlong su<br />
+              Girl name = <span class="keyword">Mrs</span> Zhaojun kong<br />
+              <br />
+              First meeting on July 22, 2017 <br />
+              <span class="comments">// Fall in love river. </span><br />
+              The boy love the girl;<br />
+              <span class="comments">// They love each other.</span><br />
+              The girl loved the boy;<br />
+              <span class="comments">// AS time goes on.</span><br />
+              The boy can not be separated the girl;<br />
+              <span class="comments">// At the same time.</span><br />
+              The girl can not be separated the boy;<br />
+              <span class="comments">// Both wind and snow all over the sky.</span><br />
+              <span class="comments">// Whether on foot or 5 kilometers.</span><br />
+              <span class="keyword">The boy</span> very <span class="keyword">happy</span>;<br />
+              <span class="keyword">The girl</span> is also very <span class="keyword">happy</span>;<br />
+              <span class="placeholder"/><span class="comments">// Whether it is right now</span><br />
+              <span class="placeholder"/><span class="comments">// Still in the distant future.</span><br />
+              <span class="placeholder"/>The boy has but one dream;<br />
+              <span class="comments">// The boy wants the girl could well have been happy.</span><br />
+              <br>
+              <br>
+              I want to say:<br />
+              Baby, I love you forever;<br />
+            </div>
+            <div id="loveHeart">
+              <canvas id="garden"></canvas>
+              <div id="words">
+                <div id="messages">
+                  亲爱的，这是我们相爱在一起的时光。
+                  <div id="elapseClock"></div>
+                </div>
+                <div id="loveu">
+                  爱你直到永永远远。<br/>
+                  <div class="signature">-- 苏彦龙</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      
+
+        <script type="text/javascript">
+        /* 按钮动画效果开始*/
+        $(function(){
+          $("#open").click(function(){
+            $("#xkdhl1").toggle(1000);
+            $("#xkdhl2").toggle(1100);
+            $("#xkdhl3").toggle(1200);
+            $("#xkdhl4").toggle(1300);
+            $("#xkdhl5").toggle(1400);
+            $(this).hide(500);
+            $("#close").show(500);
+          })
+          $("#close").click(function(){
+            $("#xkdhl1").toggle(1000);
+            $("#xkdhl2").toggle(1100);
+            $("#xkdhl3").toggle(1200);
+            $("#xkdhl4").toggle(1300);
+            $("#xkdhl5").toggle(1400);
+            $(this).hide(500);
+            $("#open").show(500);
+          })
+        });
+        /* 按钮动画效果结束*/
+        var offsetX = $("#loveHeart").width() / 2;
+        var offsetY = $("#loveHeart").height() / 2 - 55;
+        var together = new Date();
+        together.setFullYear(2017, 7, 22);
+        together.setHours(20);
+        together.setMinutes(0);
+        together.setSeconds(0);
+        together.setMilliseconds(0);
+
+        if (!document.createElement('canvas').getContext) {
+          var msg = document.createElement("div");
+          msg.id = "errorMsg";
+          msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+          document.body.appendChild(msg);
+          $("#code").css("display", "none")
+          $("#copyright").css("position", "absolute");
+          $("#copyright").css("bottom", "10px");
+          document.execCommand("stop");
+        } else {
+          setTimeout(function () {
+            startHeartAnimation();
+          }, 5000);
+
+          timeElapse(together);
+          setInterval(function () {
+            timeElapse(together);
+          }, 500);
+
+          adjustCodePosition();
+          $("#code").typewriter();
+        }
+        </script>
     </div>
     <div class="article-info article-info-index">
       
